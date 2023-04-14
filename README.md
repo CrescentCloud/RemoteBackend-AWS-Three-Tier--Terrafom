@@ -57,7 +57,7 @@ Steps to initialize backend in AWS and manage it with Terraform:
 ~~~
 terraform apply
 ~~~
-
+<img width="591" alt="Screen Shot 2023-04-14 at 12 11 02 AM" src="https://user-images.githubusercontent.com/53235392/231965853-ed041d00-1124-4236-9f84-d48f5ce0472e.png">
 
 ### 02.	To use S3 bucket and dynamoDB table to be used as the state backend add this code
 
@@ -76,9 +76,6 @@ dynamodb_table = "terraform-state-locking"
 terraform init 
 ~~~
 
-
-## Testing : 
-
 ## Troubleshooting :
 if Reinitialize failed<br> 
 <img width="669" alt="Screen Shot 2023-04-14 at 12 12 11 AM" src="https://user-images.githubusercontent.com/53235392/231961739-56edf8c9-6d7b-4ed0-80da-8ea371cbfb1c.png">
@@ -87,5 +84,35 @@ if Reinitialize failed<br>
 terraform init -backend-config="access_key=<your_AWS_access_key>" -backend-config="secret_key=<your_AWS_secret_key>" -backend-config="region=us-east-1"
 ~~~
 
+## Testing : 
+On the AWS console, the following item should be available: VPC, subnets, IGW, EC2 instances, load balancers, autoscaling, RDS database, route 53, and S3 bucket with inside terraform state file<br>
+#### S3
+<img width="505" alt="Screen Shot 2023-04-14 at 1 05 57 AM" src="https://user-images.githubusercontent.com/53235392/231969401-98b3c88d-7e9d-4759-9ff3-91589a98a3da.png">
+<img width="882" alt="Screen Shot 2023-04-14 at 12 22 30 AM" src="https://user-images.githubusercontent.com/53235392/231970455-24a23364-cdbe-46b1-8aba-b1a10c6ec623.png">
 
+#### VPC
+<img width="891" alt="Screen Shot 2023-04-14 at 12 19 30 AM" src="https://user-images.githubusercontent.com/53235392/231971534-79f2a218-8c0f-4cc6-b1ba-2dee980247ac.png">
+
+#### subnet
+
+<img width="759" alt="Screen Shot 2023-04-14 at 12 47 50 AM" src="https://user-images.githubusercontent.com/53235392/231972049-26eadb0b-6bd2-4381-baec-6a8a464af8bc.png">
+
+#### loadbalancer
+<img width="920" alt="Screen Shot 2023-04-14 at 12 20 40 AM" src="https://user-images.githubusercontent.com/53235392/231976108-dccee17d-65c3-4279-98e4-759e4ec9c226.png">
+
+#### RDS
+
+<img width="801" alt="Screen Shot 2023-04-14 at 12 25 50 AM" src="https://user-images.githubusercontent.com/53235392/231972378-c0628314-6c78-45a3-a6b7-1c81dc1902cd.png">
+
+#### Route 53-> Hosted Zone
+
+
+<img width="581" alt="Screen Shot 2023-04-14 at 1 30 43 AM" src="https://user-images.githubusercontent.com/53235392/231974555-13664924-2d7e-49aa-af85-def9aa496d6e.png">
+<img width="840" alt="Screen Shot 2023-04-14 at 12 23 39 AM" src="https://user-images.githubusercontent.com/53235392/231975589-61e989d3-d644-417e-8fb9-3edb4c96fc3d.png">
+
+#### SSH to Bastion Host
+<img width="647" alt="Screen Shot 2023-04-14 at 2 17 35 AM" src="https://user-images.githubusercontent.com/53235392/231986940-ca08d6d9-4e13-4949-a83d-17ec20575717.png">
+
+#### Connect Application server through bastion host using private IP
+<img width="814" alt="Screen Shot 2023-04-14 at 2 27 20 AM" src="https://user-images.githubusercontent.com/53235392/231988981-00495783-26ef-41ce-9982-11325dbdafdd.png">
 
