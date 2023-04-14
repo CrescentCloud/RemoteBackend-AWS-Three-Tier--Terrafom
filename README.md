@@ -34,17 +34,29 @@ In this project I use AWS S3 + Dynamo DB for remote Backend
 
 
 ## Deployment
-### Steps
+### Steps 
 ### 01.  	Run Terraform command
-Step 0 terraform init
-used to initialize a working directory containing Terraform configuration files
-Step 1 terraform plan
-used to create an execution plan
-Step 2 terraform validate
-validates the configuration files in a directory, referring only to the configuration and not accessing any remote services such as remote state, provider APIs, etc
-Step 3 terraform apply
-used to apply the changes required to reach the desired state of the configuration
+Step 0 used to initialize a working directory containing Terraform configuration files
+~~~
+terraform init
+~~~
+
+Step 1 used to create an execution plan
+~~~
+terraform plan
+~~~
+
+Step 2 validates the configuration files in a directory, referring only to the configuration and not accessing any remote services such as remote state, provider APIs, etc
+~~~
+terraform validate
+~~~
+
+Step 3 used to apply the changes required to reach the desired state of the configuration
 Steps to initialize backend in AWS and manage it with Terraform:
+~~~
+terraform apply
+~~~
+
 
 ### 02.	To use S3 bucket and dynamoDB table to be used as the state backend add this code
 
