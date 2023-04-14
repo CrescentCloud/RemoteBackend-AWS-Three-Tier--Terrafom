@@ -80,7 +80,9 @@ terraform init
 ## Testing : 
 
 ## Troubleshooting :
-if Reinitialize failed for authentication issue, use the bellow code
+if Reinitialize failed 
+<img width="669" alt="Screen Shot 2023-04-14 at 12 12 11 AM" src="https://user-images.githubusercontent.com/53235392/231961739-56edf8c9-6d7b-4ed0-80da-8ea371cbfb1c.png">
+run bellow code
 ~~~
 terraform init -backend-config="access_key=<your_AWS_access_key>" -backend-config="secret_key=<your_AWS_secret_key>" -backend-config="region=us-east-1"
 ~~~
