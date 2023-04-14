@@ -17,20 +17,20 @@ Remote backends enable storage of TerraForm state in a remote, location to enabl
 In this project I use AWS S3 + Dynamo DB for remote Backend
 
 ### AWS 3 Tire Architecture:
-•	VPC
-•	EC2 instances
-•	Elastic IP
-•	Baston Host
-•	Nat Gateway
-•	Load balancer
-•	Auto Scaling
-•	RDS instance
-•	Route 53 DNS Config
-Prerequisites
-AWS Account
-AWS Access & Secret Key
-Terraform installed on IDE (i.e Visual Studio Code)
-SSH Agent (For Windows), AWS Installed on Terminal (For Mac)
+•	 &nbsp;VPC<br>
+•	 &nbsp;EC2 instances<br>
+•	 &nbsp;Elastic IP<br>
+•	 &nbsp;Baston Host<br>
+•	 &nbsp;Nat Gateway<br>
+•	 &nbsp;Load balancer<br>
+•	 &nbsp;Auto Scaling<br>
+•	 &nbsp;RDS instance<br>
+•	 &nbsp;Route 53 DNS Config<br>
+### Prerequisites
+--> AWS Account<br>
+--> AWS Access & Secret Key<br>
+--> Terraform installed on IDE (i.e Visual Studio Code)<br>
+--> SSH Agent (For Windows), AWS Installed on Terminal (For Mac)<br>
 
 
 ## Deployment
@@ -46,8 +46,10 @@ Step 3 terraform apply
 used to apply the changes required to reach the desired state of the configuration
 Steps to initialize backend in AWS and manage it with Terraform:
 
-### 02.	To use S3 bucket and dynamoDB table to be used as the state backend add this code 
+### 02.	To use S3 bucket and dynamoDB table to be used as the state backend add this code
 
+
+'''
 backend "s3" {
 bucket         = "terraform-bucket"  # s3 bucket name
  key            = "tf/terraform.tfstate"  # state file location
@@ -55,6 +57,9 @@ region         = "us-east-1"
 dynamodb_table = "terraform-state-locking"
  encrypt        = true
  }
+ 
+ '''
+ 
 ### 03 . Reinitialize with terraform init:
 
 
