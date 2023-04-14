@@ -48,8 +48,7 @@ Steps to initialize backend in AWS and manage it with Terraform:
 
 ### 02.	To use S3 bucket and dynamoDB table to be used as the state backend add this code
 
-
-'''
+~~~
 backend "s3" {
 bucket         = "terraform-bucket"  # s3 bucket name
  key            = "tf/terraform.tfstate"  # state file location
@@ -57,8 +56,7 @@ region         = "us-east-1"
 dynamodb_table = "terraform-state-locking"
  encrypt        = true
  }
- 
- '''
+~~~
  
 ### 03 . Reinitialize with terraform init:
 
