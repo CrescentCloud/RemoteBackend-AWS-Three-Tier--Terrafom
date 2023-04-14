@@ -58,7 +58,10 @@ dynamodb_table = "terraform-state-locking"
  }
 ~~~
  
-### 03 . Reinitialize with terraform init:
+### 03 . Reinitialize with 
+~~~ 
+terraform init 
+~~~
 
 
 ## Testing : 
