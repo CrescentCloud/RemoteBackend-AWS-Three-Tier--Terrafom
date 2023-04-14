@@ -111,8 +111,8 @@ On the AWS console, the following item should be available: VPC, subnets, IGW, E
 <img width="840" alt="Screen Shot 2023-04-14 at 12 23 39 AM" src="https://user-images.githubusercontent.com/53235392/231975589-61e989d3-d644-417e-8fb9-3edb4c96fc3d.png">
 
 #### SSH to Bastion Host
-<img width="647" alt="Screen Shot 2023-04-14 at 2 17 35 AM" src="https://user-images.githubusercontent.com/53235392/231986940-ca08d6d9-4e13-4949-a83d-17ec20575717.png">
+<img width="400" alt="Screen Shot 2023-04-14 at 2 17 35 AM" src="https://user-images.githubusercontent.com/53235392/231986940-ca08d6d9-4e13-4949-a83d-17ec20575717.png">
 
 #### Connect Application server using private IP
-<img width="814" alt="Screen Shot 2023-04-14 at 2 27 20 AM" src="https://user-images.githubusercontent.com/53235392/231988981-00495783-26ef-41ce-9982-11325dbdafdd.png">
+<img width="500" alt="Screen Shot 2023-04-14 at 2 27 20 AM" src="https://user-images.githubusercontent.com/53235392/231988981-00495783-26ef-41ce-9982-11325dbdafdd.png">
 
