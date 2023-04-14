@@ -31,6 +31,7 @@ In this project I use AWS S3 + Dynamo DB for remote Backend
 --> AWS Access & Secret Key<br>
 --> Terraform installed on IDE (i.e Visual Studio Code)<br>
 --> SSH Agent (For Windows), AWS Installed on Terminal (For Mac)<br>
+--> MySql Workbech for Database connection testing
 
 
 ## Deployment
@@ -78,6 +79,11 @@ terraform init
 
 ## Testing : 
 
+## Troubleshooting :
+if Reinitialize failed for authentication issue, use the bellow code
+~~~
+terraform init -backend-config="access_key=<your_AWS_access_key>" -backend-config="secret_key=<your_AWS_secret_key>" -backend-config="region=us-east-1"
+~~~
 
 
 
